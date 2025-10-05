@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kennith Crasta | Corporate Finance Portfolio</title>
+    <!-- Load Tailwind CSS via CDN for rapid development and single-file portability -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to integrate Inter font and dark theme defaults */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0d1a; /* Deep Charcoal Blue */
+            color: #e5e7eb; /* Light Gray for readability */
+            scroll-behavior: smooth;
+        }
+        /* Custom color pallet for branding */
+        .primary-color {
+            color: #ff8c00; /* Deep Orange/Amber for emphasis */
+        }
+        .bg-primary-color {
+            background-color: #ff8c00;
+        }
+        /* Styles for the expertise list */
+        .expertise-grid li {
+            position: relative;
+            padding-left: 1.75rem;
+        }
+        .expertise-grid li::before {
+            content: "✓";
+            color: #ff8c00;
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+        }
+        /* Smooth scrolling for internal links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="sticky top-0 z-50 bg-[#161625] bg-opacity-95 backdrop-blur-sm shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#hero" class="text-2xl font-extrabold primary-color tracking-wider">
+                    K C R A S T A
+                </a>
+                <div class="flex space-x-4">
+                    <a href="#expertise" class="text-gray-300 hover:text-white transition duration-200 p-2 rounded-lg">Expertise</a>
+                    <a href="#experience" class="text-gray-300 hover:text-white transition duration-200 p-2 rounded-lg">Experience</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition duration-200 p-2 rounded-lg">Contact</a>
+                    <!-- Download CV Button: UPDATED FILENAME TO Resume _KC.pdf -->
+                    <a href="Resume _KC.pdf" download class="ml-4 px-4 py-2 text-sm font-semibold text-white bg-primary-color rounded-lg hover:bg-orange-700 transition duration-300 shadow-md">
+                        Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. HERO SECTION (Main Landing Page) -->
+    <section id="hero" class="py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:items-center lg:space-x-12">
+
+                <!-- Left Column: Text Summary -->
+                <div class="lg:w-2/3">
+                    <h2 class="text-4xl sm:text-6xl font-extrabold leading-tight tracking-tight">
+                        Kennith Crasta, <br>
+                        <span class="block primary-color">Corporate Accountant & Regulatory Reporting Specialist.</span>
+                    </h2>
+                    <p class="mt-6 text-xl text-gray-400 max-w-2xl">
+                        A results-driven finance professional with 9+ years of experience in statutory accounting, audit management, VAT reporting & data preparation, and financial statement finalization across the UAE. I focus on optimizing ERP utilization (Oracle EBS, Tally, QuickBooks) and implementing robust internal controls.
+                    </p>
+                    <div class="mt-8 flex space-x-4">
+                        <a href="#experience" class="px-8 py-3 text-lg font-semibold text-[#0d0d1a] bg-primary-color rounded-xl hover:bg-orange-700 transition duration-300 shadow-xl">
+                            View Work History
+                        </a>
+                        <a href="mailto:kennithrcg@gmail.com" class="px-8 py-3 text-lg font-semibold border-2 border-gray-600 text-gray-300 rounded-xl hover:bg-gray-800 transition duration-300">
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Photo Placeholder & Quick Stats -->
+                <div class="lg:w-1/3 mt-12 lg:mt-0 flex flex-col items-center">
+                    <!-- Photo Placeholder replaced by actual image tag -->
+                    <div class="w-48 h-48 bg-gray-700 rounded-full overflow-hidden border-4 border-primary-color shadow-2xl">
+                        <!-- IMPORTANT: Image source is IMG-20241102-WA0028.jpg -->
+                        <img src="IMG-20241102-WA0028.jpg" alt="Kennith Crasta Professional Headshot" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Quick Stats/Achievements -->
+                    <div class="mt-8 grid grid-cols-2 gap-4 text-center">
+                        <div class="p-4 bg-[#161625] rounded-xl shadow-lg border border-gray-700">
+                            <p class="text-3xl font-bold primary-color">9+</p>
+                            <p class="text-sm text-gray-400 mt-1">Years Experience</p>
+                        </div>
+                        <div class="p-4 bg-[#161625] rounded-xl shadow-lg border border-gray-700">
+                            <p class="text-3xl font-bold primary-color">100%</p>
+                            <p class="text-sm text-gray-400 mt-1">Accurate VAT Reporting</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. EXPERTISE & SKILLS SECTION -->
+    <section id="expertise" class="py-16 bg-[#161625]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-bold text-center mb-12">
+                Core Expertise & Technical Skills
+            </h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Expertise Area 1 -->
+                <div class="p-6 rounded-xl bg-[#212133] shadow-2xl border-t-4 border-primary-color">
+                    <h4 class="text-xl font-semibold mb-3 text-white">Financial Operations & Reporting</h4>
+                    <ul class="text-gray-400 space-y-2 expertise-grid">
+                        <li>Statutory Accounting</li>
+                        <li>Financial Statement Finalization (P&L, B/S)</li>
+                        <li>Intercompany Reconciliation</li>
+                        <li>Payroll and AP Management</li>
+                    </ul>
+                </div>
+
+                <!-- Expertise Area 2 -->
+                <div class="p-6 rounded-xl bg-[#212133] shadow-2xl border-t-4 border-primary-color">
+                    <h4 class="text-xl font-semibold mb-3 text-white">Regulatory Reporting & Audit Control</h4>
+                    <ul class="text-gray-400 space-y-2 expertise-grid">
+                        <li>VAT Data Accumulation & Reporting</li>
+                        <li>Audit Support & Documentation</li>
+                        <li>Internal Control Systems Design</li>
+                        <li>Process Optimization</li>
+                        </ul>
+                </div>
+
+                <!-- Expertise Area 3 -->
+                <div class="p-6 rounded-xl bg-[#212133] shadow-2xl border-t-4 border-primary-color">
+                    <h4 class="text-xl font-semibold mb-3 text-white">Technical Systems</h4>
+                    <ul class="text-400 space-y-2 expertise-grid">
+                        <li>ERP: Oracle E-Business Suite</li>
+                        <li>QuickBooks & Tally (Expert User)</li>
+                        <li>MIS Report Generation</li>
+                        <li>Advanced Microsoft Excel</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. WORK EXPERIENCE SECTION -->
+    <section id="experience" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-bold text-center mb-12">
+                High-Impact Professional Experience
+            </h3>
+
+            <!-- Job Entry: Emirates Hospital Group (Primary Role) -->
+            <div class="bg-[#161625] p-8 rounded-xl shadow-2xl border-l-4 border-primary-color mb-8 transition hover:shadow-primary-color/20 duration-300">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h4 class="text-2xl font-bold primary-color">Associate - Finance (Corporate Accountant)</h4>
+                        <p class="text-xl text-white">Emirates Hospital Group | Dubai, UAE</p>
+                    </div>
+                    <span class="text-lg font-semibold text-gray-400">09/2016 – Present</span>
+                </div>
+                <ul class="list-disc ml-6 text-gray-300 space-y-2">
+                    <!-- Removed ** bolding/asterisks -->
+                    <li>Audit & Reporting: Successfully compiled accurate VAT reports and supporting documentation, contributing to zero penalty compliance outcomes, and finalized comprehensive audit packages.</li>
+                    <li>Operational Excellence: Maintained 100% on-time AP/vendor settlements and achieved zero payroll discrepancies, ensuring robust cash management.</li>
+                    <li>Process Improvement: Streamlined reconciliation processes, clearing historical backlogs and reducing reporting discrepancies by 15% for real-time accuracy.</li>
+                    <li>ERP Leadership: Actively contributed to ERP migration (Oracle EBS) and led finance team training sessions, enhancing system efficiency across the department.</li>
+                    <li>Reporting: Prepared and finalized monthly MIS reports, P&L statements, and annual financial statements for senior management and regulatory submission.</li>
+                </ul>
+            </div>
+
+            <!-- Job Entry: Apex Trading Company WLL -->
+            <div class="bg-gray-800 p-6 rounded-xl shadow-lg mb-8 border-l-4 border-gray-600">
+                <div class="flex justify-between items-start mb-3">
+                    <div>
+                        <h4 class="text-xl font-bold text-white">General Accountant</h4>
+                        <p class="text-lg text-gray-300">Apex Trading Company WLL</p>
+                    </div>
+                    <span class="text-md font-semibold text-gray-500">03/2016 – 07/2016</span>
+                </div>
+                <p class="text-gray-400">
+                    Focused on improving the integrity of historical financial records through detailed bank and accounts payable reconciliations, successfully aligning outstanding balances with the general ledger and strengthening financial data reliability.
+                </p>
+            </div>
+
+            <!-- Job Entry: Ali Associates -->
+            <div class="bg-gray-800 p-6 rounded-xl shadow-lg border-l-4 border-gray-600">
+                <div class="flex justify-between items-start mb-3">
+                    <div>
+                        <h4 class="text-xl font-bold text-white">Junior Accountant (Outsourcing)</h4>
+                        <p class="text-lg text-gray-300">Ali Associates</p>
+                    </div>
+                    <span class="text-md font-semibold text-gray-500">11/2014 – 11/2015</span>
+                </div>
+                <p class="text-gray-400">
+                    Supported accounting outsourcing for small businesses, managing accurate recording of sales/purchase invoices, verifying supporting documents, and assisting in documentation for Indian Business Tax and Income Tax consultation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CONTACT & FOOTER SECTION -->
+    <section id="contact" class="py-16 bg-[#161625]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-4xl font-bold mb-4">
+                Ready to optimize your financial operations?
+            </h3>
+            <p class="text-xl text-gray-400 mb-8">
+                Let's discuss how my 9+ years of corporate accounting experience can drive efficiency and compliance in your organization.
+            </p>
+            <div class="flex flex-wrap justify-center space-x-4 space-y-4 sm:space-y-0">
+                <!-- Email Link -->
+                <a href="mailto:kennithrcg@gmail.com" class="px-6 py-3 bg-primary-color text-[#0d0d1a] font-semibold rounded-xl hover:bg-orange-700 transition duration-300 shadow-lg flex items-center">
+                    <!-- Icon for Email -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    Email Me
+                </a>
+
+                <!-- LinkedIn Link -->
+                <a href="https://www.linkedin.com/in/kennith-crasta-08a93130a/" target="_blank" class="px-6 py-3 border-2 border-gray-600 text-gray-300 font-semibold rounded-xl hover:bg-gray-800 transition duration-300 flex items-center">
+                    <!-- Icon for LinkedIn -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    LinkedIn Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-10 py-6 text-center text-gray-500 border-t border-gray-800">
+        <p>© 2025 Kennith Crasta. All rights reserved. Built with clean, modern HTML/CSS.</p>
+    </footer>
+
+</body>
+</html>
